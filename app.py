@@ -4,7 +4,7 @@ import torch
 import os
 import pinecone
 from langchain_community.retrievers import PineconeHybridSearchRetriever
-from Pinecone import ServerlessSpec
+from pinecone import ServerlessSpec
 import time
 from pinecone import Pinecone,ServerlessSpec
 from langchain_community.embeddings import HuggingFaceEmbeddings
