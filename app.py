@@ -141,7 +141,7 @@ Context:
 Based solely on the context above, answer the following question:
 Question: {user_query}
 
-If the answer is not in the context, respond with: "The information is not available in the provided context."
+If the answer is not in the context, respond with: "The information is not available in the provided context and ask the user to enter the Query for revelent context"
 Answer:
 """
 response = llm.invoke(prompt)
