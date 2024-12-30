@@ -20,8 +20,7 @@ load_dotenv()
 
 ## user_query = "When is James joined?"
 # Step 1: Initialize Pinecone
-
-PC_API_KEY=st.secrets(PC_API_KEY)
+st.secrets("PC_API_KEY")
 #Pinecone.init(api_key=PC_API_KEY, environment="us-east-1")
 pc=Pinecone(api_key=PC_API_KEY)
 # Create a Pinecone Index
