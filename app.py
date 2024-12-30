@@ -105,7 +105,7 @@ def query_pinecone(user_query):
     return context
 ## Title of the Application
 st.title("Clinsys RAG Demo")
-st.write("Response retrived from Pinecone and complete from LLM")
+##st.write("Response retrived from Pinecone and complete from LLM")
 st.write("Embeddings: Huggingface - sentence-transformers/all-MiniLM-L6-v2")
 st.write("Database: Postgress Database hosted in AWS Cloud")
 st.write("Vector Database: Picecone")
