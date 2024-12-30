@@ -2,7 +2,7 @@ from operator import index
 import streamlit as st
 import torch
 import os
-import pinecone
+## import pinecone
 from langchain_community.retrievers import PineconeHybridSearchRetriever
 ## from Pinecone import ServerlessSpec
 import time
