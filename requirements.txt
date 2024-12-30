@@ -36,3 +36,4 @@ bitsandbytes
 langchain
 streamlit
 pinecone-client
+psycopg2-binary
