@@ -11,7 +11,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 ##import psycopg2
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import SentenceTransformer
-from psycopg2.extras import RealDictCursor
+## from psycopg2.extras import RealDictCursor
 #from langchain.llms import HuggingFaceEndpoint
 from langchain_community.llms import HuggingFaceEndpoint
 from operator import index
