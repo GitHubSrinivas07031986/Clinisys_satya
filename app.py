@@ -104,8 +104,12 @@ def query_pinecone(user_query):
     ## print(f"Context: {context}")
     return context
 ## Title of the Application
-st.title("Clinsys RAG Based Gen AI Implementation POC")
-st.write("Response retrived from PC and complete from LLM")
+st.title("Clinsys RAG Demo")
+st.write("Response retrived from Pinecone and complete from LLM")
+st.write("Embeddings: Huggingface - sentence-transformers/all-MiniLM-L6-v2")
+st.write("Database: Postgress Database hosted in AWS Cloud")
+st.write("Vector Database: Picecone")
+st.write("LLM: Huggingface-LLM-mistralai/Mistral-7B-Instruct-v0.3")
 ##user_query = "When is Bond joined?"
 user_query=st.text_input("Enter the User Query:")
 context=query_pinecone(user_query)
