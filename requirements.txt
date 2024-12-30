@@ -35,3 +35,4 @@ accelerate
 bitsandbytes
 langchain
 streamlit
+pinecone-client
