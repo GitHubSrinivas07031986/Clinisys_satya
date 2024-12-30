@@ -48,6 +48,7 @@ def get_embeddings(text):
 
 # Step 3: Data Ingestion from PostgreSQL
 def ingest_data_from_postgres():
+    PG_password=st.secrets["PG_password"]
     connection = psycopg2.connect(
         dbname="postgres", user="postgres", password=PG_password, host="mypgdb-4.c38oaogsexra.us-east-1.rds.amazonaws.com", port="5432"
     )
@@ -117,6 +118,7 @@ from langchain_huggingface import HuggingFaceEndpoint
 ## from langchain_huggingface import HuggingFaceEndpoint
 
 repo_id="mistralai/Mistral-7B-Instruct-v0.3"
+HF_TOKEN=st.secrets["HF_TOKEN"]
 llm = HuggingFaceEndpoint(
     endpoint_url=f"https://api-inference.huggingface.co/models/{repo_id}",
     huggingfacehub_api_token=HF_TOKEN,
