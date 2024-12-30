@@ -55,7 +55,7 @@ def ingest_data_from_postgres():
     cursor = connection.cursor()
 
     # Query your data
-    cursor.execute('SELECT id, "Description" FROM employee')
+    cursor.execute('SELECT id, "Description" FROM pathology')
     rows = cursor.fetchall()
 
     for row in rows:
