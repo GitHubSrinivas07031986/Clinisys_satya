@@ -131,7 +131,19 @@ llm = HuggingFaceEndpoint(
 )
 
 # Example usage of the model
-prompt = f"Context:\n{context}\n\nQuestion: {user_query}\nAnswer:"
+##prompt = f"Context:\n{context}\n\nQuestion: {user_query}\nAnswer:"
+prompt = f"""
+You are a highly accurate and factual assistant. You are strictly prohibited from using any information other than the provided context.
+
+Context:
+{context}
+
+Based solely on the context above, answer the following question:
+Question: {user_query}
+
+If the answer is not in the context, respond with: "The information is not available in the provided context."
+Answer:
+"""
 response = llm.invoke(prompt)
 first_answer = response.split("Question:")[0].strip()
 st.write(first_answer)
